@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: calendarbot
+    env: python
+    plan: free
+    region: frankfurt
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    pythonVersion: 3.10
